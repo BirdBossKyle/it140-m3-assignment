@@ -1,0 +1,52 @@
+# Wasteland Run — Move-Between-Rooms Pseudocode
+
+START game
+
+    LET current_room = "Survivor Shelter"
+    LET inventory = empty list
+    LET game_is_running = TRUE
+
+    WHILE game_is_running = TRUE
+
+        OUTPUT "Current room: " + current_room
+        OUTPUT "Inventory: " + inventory
+        OUTPUT "Commands: north, south, east, west, get item, quit"
+        OUTPUT "Enter a command:"
+        GET command
+        LET command = lowercase(trim(command))
+
+        IF command = "quit" THEN
+            OUTPUT "You leave the wasteland. Game ended."
+            LET game_is_running = FALSE
+
+        ELSE IF command = "get item" THEN
+            CALL get_item(current_room, inventory)
+            // Control returns here after get_item handles the request.
+            // The main loop repeats unless the game has ended.
+
+        ELSE IF command = "north" OR command = "south" OR command = "east" OR command = "west" THEN
+
+            IF command is a valid exit from current_room THEN
+                LET current_room = room connected in command direction
+                OUTPUT "You moved to " + current_room
+
+                IF current_room = "Command Bunker" THEN
+                    IF inventory contains all seven required items THEN
+                        OUTPUT "You collected every supply and defeated the Raider Leader. You win!"
+                    ELSE
+                        OUTPUT "The Raider Leader catches you before you collected every supply. You lose."
+                    END IF
+                    LET game_is_running = FALSE
+                END IF
+
+            ELSE
+                OUTPUT "You cannot go that way from this room."
+            END IF
+
+        ELSE
+            OUTPUT "Invalid command. Enter north, south, east, west, get item, or quit."
+        END IF
+
+    END WHILE
+
+END game
