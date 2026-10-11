@@ -36,7 +36,7 @@ The Raider Leader controls the Command Bunker and threatens anyone searching the
 
 ## Room Connections
 
-Each listed direction is a valid move to the named room. The reverse connection is also available.
+Each connection is two-way. Use the direction shown to travel between the rooms.
 
 - Survivor Shelter: north to Abandoned Store; east to Clinic.
 - Abandoned Store: south to Survivor Shelter; east to Radio Tower.
@@ -45,8 +45,8 @@ Each listed direction is a valid move to the named room. The reverse connection 
 - Gas Station: south to Clinic; east to Water Plant.
 - Ruined School: north to Radio Tower; east to Highway Checkpoint.
 - Water Plant: west to Gas Station; south to Command Bunker.
-- Highway Checkpoint: west to Ruined School; east to Command Bunker.
-- Command Bunker: north to Water Plant; west to Highway Checkpoint.
+- Highway Checkpoint: west to Ruined School.
+- Command Bunker: north to Water Plant.
 
 ## Ending Conditions
 
