@@ -37,17 +37,17 @@ START game
                 LET next_room = "Radio Tower"
             ELSE IF current_room = "Clinic" AND command = "west" THEN
                 LET next_room = "Survivor Shelter"
-            ELSE IF current_room = "Clinic" AND command = "north" THEN
+            ELSE IF current_room = "Clinic" AND command = "east" THEN
                 LET next_room = "Gas Station"
             ELSE IF current_room = "Radio Tower" AND command = "west" THEN
                 LET next_room = "Abandoned Store"
-            ELSE IF current_room = "Radio Tower" AND command = "south" THEN
+            ELSE IF current_room = "Radio Tower" AND command = "east" THEN
                 LET next_room = "Ruined School"
-            ELSE IF current_room = "Gas Station" AND command = "south" THEN
+            ELSE IF current_room = "Gas Station" AND command = "west" THEN
                 LET next_room = "Clinic"
             ELSE IF current_room = "Gas Station" AND command = "east" THEN
                 LET next_room = "Water Plant"
-            ELSE IF current_room = "Ruined School" AND command = "north" THEN
+            ELSE IF current_room = "Ruined School" AND command = "west" THEN
                 LET next_room = "Radio Tower"
             ELSE IF current_room = "Ruined School" AND command = "east" THEN
                 LET next_room = "Highway Checkpoint"
