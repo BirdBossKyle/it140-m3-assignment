@@ -40,10 +40,10 @@ Each connection is two-way. Use the direction shown to travel between the rooms.
 
 - Survivor Shelter: north to Abandoned Store; east to Clinic.
 - Abandoned Store: south to Survivor Shelter; east to Radio Tower.
-- Clinic: west to Survivor Shelter; north to Gas Station.
-- Radio Tower: west to Abandoned Store; south to Ruined School.
-- Gas Station: south to Clinic; east to Water Plant.
-- Ruined School: north to Radio Tower; east to Highway Checkpoint.
+- Clinic: west to Survivor Shelter; east to Gas Station.
+- Radio Tower: west to Abandoned Store; east to Ruined School.
+- Gas Station: west to Clinic; east to Water Plant.
+- Ruined School: west to Radio Tower; east to Highway Checkpoint.
 - Water Plant: west to Gas Station; south to Command Bunker.
 - Highway Checkpoint: west to Ruined School.
 - Command Bunker: north to Water Plant.
